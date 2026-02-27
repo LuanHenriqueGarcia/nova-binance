@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Teste Logo 3D</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    model-viewer {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <model-viewer 
+    src="./logo.glb"
+    auto-rotate
+    camera-controls
+    shadow-intensity="1"
+    exposure="1.2"
+    ar>
+  </model-viewer>
+
+</body>
+</html>
